@@ -112,3 +112,4 @@ module.default = Container;
 //Used for testing purposes.
 
 module.exports = Rating;
+

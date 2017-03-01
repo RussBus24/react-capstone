@@ -1,23 +1,23 @@
-# Thinkful React Starter
+# RussBus Movie App
 
-A template for developing React apps.
+For the Thinkful React-Capstone project curriculum.
 
-## Getting started
+### Movie App
 
-### Setting up a project
+This is a simple Movie rating app using React. You can search for movies which are pulled from a movie database API, then rate it based on violence, language and sensuality (I may add or alter these topics later). Based on your review, you'll be told how your rating stacks up with the movie's actual rating. This app is mainly for entertainment purposes only.
 
-* Move into your projects directory: `cd ~/YOUR_PROJECTS_DIRECTORY`
-* Clone this repository: `git clone https://github.com/oampo/thinkful-react-starter YOUR_PROJECT_NAME`
-* Move into the project directory: `cd YOUR_PROJECT_NAME`
-* Install the dependencies: `npm install`
-* Create a new repo on GitHub: https://github.com/new
-    * Make sure the "Initialize this repository with a README" option is left **un**checked
-* Update the remote to point to your GitHub repository: `git remote set-url origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME`
+### How to use
 
-### Working on the project
+Upon landing on the page, just enter a movie of your choice to search for. Try to be as specific as possible. Once the search result returns, you will have the ability to rate the film yourself based on three seperate criteria: Violence, Language & Sensuality. As you know, movies these days are given a Motion Pictures Association of America (MPAA) rating before they are released into theaters. For many, a movie's rating can be rather subjective. What one may percieve as the perfect rating for a film, others may think it to be too harsh or lenient.
 
-* Move into the project directory: `cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME`
-* Run the development task: `npm run dev`
-    * Starts a server running at http://localhost:8080
-    * Automatically rebuilds when any of your files change
+Once you have answered all the ratings, click on Submit Rating to see how your ratings stack up against the movie's actual rating, :)
+
+### Technical
+
+This app was written using the following:
+* Webpack frontend technology, encompassing HTML, CSS, jQuery, JavaScript, React.js & Redux.
+* All functionality is handled using React components.
+* API data is retrieved from http://www.omdbapi.com, a free web service for obtaining movie information.
+* Backend/server side technology includes: Isomorphic-fetch (https://github.com/matthew-andrews/isomorphic-fetch) for API data retrieval within React.
+* App tested using Mocha & Chai.
 
