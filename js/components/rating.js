@@ -7,9 +7,6 @@ var actions = require('../actions/index');
 var browserHistory = require('react-router').browserHistory;
 
 var Rating = React.createClass({
-    componentDidMount: function() {
-
-    },
 
     getInitialState() {
       return {
@@ -68,17 +65,17 @@ var Rating = React.createClass({
               </form>
               <h3><span id="ex18-label-1" className="hidden">Language</span></h3>
               <form>
-                <input type="radio" name="violence" value="1" onChange={this.languageRate} />Low
-                <input type="radio" name="violence" value="2" onChange={this.languageRate} />Medium
-                <input type="radio" name="violence" value="3" onChange={this.languageRate} />High
-                <input type="radio" name="violence" value="4" onChange={this.languageRate} />OMG!
+                <input type="radio" name="language" value="1" onChange={this.languageRate} />Low
+                <input type="radio" name="language" value="2" onChange={this.languageRate} />Medium
+                <input type="radio" name="language" value="3" onChange={this.languageRate} />High
+                <input type="radio" name="language" value="4" onChange={this.languageRate} />OMG!
               </form>
               <h3><span id="ex18-label-1" className="hidden">Sensuality</span></h3>
               <form>
-                <input type="radio" name="violence" value="1" onChange={this.sensualityRate} />Low
-                <input type="radio" name="violence" value="2" onChange={this.sensualityRate} />Medium
-                <input type="radio" name="violence" value="3" onChange={this.sensualityRate} />High
-                <input type="radio" name="violence" value="4" onChange={this.sensualityRate} />OMG!
+                <input type="radio" name="sensuality" value="1" onChange={this.sensualityRate} />Low
+                <input type="radio" name="sensuality" value="2" onChange={this.sensualityRate} />Medium
+                <input type="radio" name="sensuality" value="3" onChange={this.sensualityRate} />High
+                <input type="radio" name="sensuality" value="4" onChange={this.sensualityRate} />OMG!
                </form>
                 <form onSubmit={this.sendRating}>
               <p><input type="submit" name="Submit" value="Submit Rating"/></p>
@@ -110,6 +107,8 @@ var mapDispatchToProps = function(dispatch) {
 
 var Container = connect(mapStateToProps, mapDispatchToProps)(Rating);
 
-module.exports = Container;
+module.default = Container;
 
-//module.exports = Rating;
+//Used for testing purposes.
+
+module.exports = Rating;

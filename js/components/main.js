@@ -9,12 +9,6 @@ var Result = require('./result');
 
 var Main = React.createClass({
 
-    componentDidMount: function() {
-      var query = 'Star Wars';
-        //this.props.imdbTest(query);
-        //console.log(this.props.movieTitle);
-    },
-
     render: function() {
 
         return (
@@ -52,9 +46,11 @@ var mapDispatchToProps = function(dispatch) {
 
 var Container = connect(mapStateToProps, mapDispatchToProps)(Main);
 
-module.exports = Container;
+module.default = Container;
 
-//module.exports = Main;
+//Used for testing purposes.
+
+module.exports = Main;
 
 //this.props.movieTitle?<Rating />:''}
 

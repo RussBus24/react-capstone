@@ -54,6 +54,8 @@ var mapDispatchToProps = function(dispatch) {
 
 var Container = connect(mapStateToProps, mapDispatchToProps)(Query);
 
-module.exports = Container;
+module.default = Container;
 
-//module.exports = Query;
+//Used for testing purposes.
+
+module.exports = Query;

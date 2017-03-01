@@ -17,7 +17,8 @@ var Result = React.createClass({
       <div className="movie-result">
         <h2>Based on your rating versus the movie's actual rating...</h2>
         <h1><p>{Quotes.quotesMed[Math.floor(Math.random() * 3)]}</p></h1>
-        <Link to={'/movie'}>Back</Link>
+        <p><Link to={'/movie'}>Back</Link></p>
+        <p><Link to={'/'}>Start Over</Link></p>
       </div>
     );
   }
@@ -40,7 +41,9 @@ var mapStateToProps = function(state, props) {
 
 var Container = connect(mapStateToProps, null)(Result);
 
-module.exports = Container;
+module.default = Container;
 
-//module.exports = Result;
+//Used for testing purposes.
+
+module.exports = Result;
 

@@ -4,7 +4,7 @@ module.exports = {
               'You are a heartless just like the Kanye West song.'],
   quotesMed: ['Seems like you have a good head on your shoulders.',
               'You need to have a shot of whiskey.',
-              'I am a test med quote'],
+              'It sounds about right.'],
   quotesHigh: ['You must have had a sheltered childhood.',
                'You should consider a career in politics.',
                'You are a raging sociopath.'],
