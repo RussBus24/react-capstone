@@ -12,7 +12,6 @@ describe('Result Component', function() {
         var renderer = TestUtils.createRenderer();
         renderer.render(<Result store={store} />);
         var result = renderer.getRenderOutput();
-        console.log(result.props.children[1].props);
         result.props.className.should.equal('movie-result');
 
         var headerTwo = result.props.children[0];

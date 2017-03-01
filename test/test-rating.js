@@ -13,8 +13,6 @@ describe('Rating Component', function() {
         var renderer = TestUtils.createRenderer();
         renderer.render(<Rating store={store} />);
         var result = renderer.getRenderOutput();
-        console.log(result.props.children[9].props.children.props.children);
-
         result.props.className.should.equal('movie-rating');
 
         var headerOne = result.props.children[0];

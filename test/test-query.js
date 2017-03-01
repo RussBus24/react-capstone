@@ -12,7 +12,6 @@ describe('Query Component', function() {
         var renderer = TestUtils.createRenderer();
         renderer.render(<Query store={store} />);
         var result = renderer.getRenderOutput();
-        console.log(result.props);
         result.props.className.should.equal('movie-query');
 
         var p = result.props.children[0];
