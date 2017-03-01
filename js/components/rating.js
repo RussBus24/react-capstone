@@ -1,7 +1,5 @@
 var React = require('react');
 var connect = require('react-redux').connect;
-//var ReactBootstrapSlider = require("react-bootstrap-slider");
-//var Slider = require('bootstrap-slider');
 
 var actions = require('../actions/index');
 var browserHistory = require('react-router').browserHistory;
